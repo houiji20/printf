@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * print_char - prints a character
  * @arg: The character to print, argument pointer
