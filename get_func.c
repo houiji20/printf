@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * get_func - check depending on separator
  * @s: char
