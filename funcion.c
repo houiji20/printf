@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * print_char - prints a character
  * @arg: The character to print, argument pointer
@@ -78,43 +78,3 @@ int print_int(va_list arg)
 	}
 	return (count);
 }
-/**
- * print_b - convert an integer to binary (base 2).
- *
- * @arg: the list of arguments.
- *
- *  Return: number of printed element.
- */
-int print_b(va_list arg)
-{
-	unsigned int binary[32];
-	int i = 0;
-	unsigned int n = 0, count = 0;
-
-	n = va_arg(arg, unsigned int);
-
-	if (n <= 1)
-	{
-		_putchar(n + '0');
-		count++;
-	}
-	else
-	{
-		while (n > 0)
-		{
-			binary[i] = n % 2;
-			n = n / 2;
-			i++;
-		}
-		for (i = i - 1; i >= 0; i--)
-		{
-			_putchar(binary[i] + '0');
-			count++;
-		}
-	}
-	return (count);
-}
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Sec
