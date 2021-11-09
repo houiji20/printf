@@ -7,7 +7,7 @@
  */
 int get_func(const char s, va_list ap)
 {
-	int i = 0, count = 0;
+	int i = 0, counpt = 0;
 	printf_t ch[] = {
 		{'c', print_char},
 		{'s', print_string},
@@ -19,8 +19,8 @@ int get_func(const char s, va_list ap)
 	{
 		if (ch[i].c == s)
 		{
-			count = count + ch[i].fun(ap);
-			return (count);
+			counpt = counpt + ch[i].hol(ap);
+			return (counpt);
 		}
 		i++;
 	}
