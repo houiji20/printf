@@ -2,7 +2,7 @@
 /**
  * _printf - print all (printf reecreation)
  * @format: format specifier
- * Return: count
+ * Return: counpt
  */
 int _printf(const char *format, ...)
 {
